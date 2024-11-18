@@ -23,7 +23,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 router=DefaultRouter()
-router.register('user/add',UserCreationView,basename='useradd')
+router.register('user/add/',UserCreationView,basename='useradd')
 router.register('tools/add',ProductAdd,basename='productadd')
 router.register('category/add',CategoryAddView,basename='category')
 router.register('user/delete',UserDeletionview,basename='deluser')
